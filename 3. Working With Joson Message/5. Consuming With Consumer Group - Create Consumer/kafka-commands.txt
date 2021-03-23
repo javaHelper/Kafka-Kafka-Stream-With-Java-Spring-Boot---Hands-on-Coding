@@ -1,0 +1,12 @@
+NOTE : 
+- See lecture with title "Executing Kafka Commands" if you need guidance to execute commands
+- If you use windows, change the .sh extension to .bat
+
+
+# describe consumer group (change the group name as required)
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group cg-dashboard --describe
+
+# reset offset of consumer group
+# topic format is topic:partition, e.g. : t_some_topic:0,2,4
+# topic format without partition (e.g. : t_my_topic) will reset all partitions
+kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group cg-dashboard --execute --reset-offsets --to-offset 10 --topic t_commodity:0

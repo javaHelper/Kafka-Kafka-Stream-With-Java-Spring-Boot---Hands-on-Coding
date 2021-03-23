@@ -1,0 +1,7 @@
+NOTE
+- You must have sudo access on Linux for installation.
+- Install ansible using this syntax:
+sudo apt-get install software-properties-common && sudo apt-add-repository -y ppa:ansible/ansible && sudo apt-get update && sudo apt-get install -y ansible
+
+- To execute ansible script, download kafka.yml from this lecture resource, put it on some folder, and execute using this:
+ansible-playbook kafka.yml -K
