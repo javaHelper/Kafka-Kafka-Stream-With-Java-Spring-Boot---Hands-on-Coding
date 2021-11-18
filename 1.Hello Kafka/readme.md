@@ -1,5 +1,7 @@
 # Hello World
 
+Starting with version 2.5, the consumerProps method sets the `ConsumerConfig.AUTO_OFFSET_RESET_CONFIG` to `earliest`. This is because, in most cases, you want the consumer to consume any messages sent in a test case. The ConsumerConfig default is latest which means that messages already sent by a test, before the consumer starts, will not receive those records. To revert to the previous behavior, set the property to latest after calling the method.
+
 ```
 C:\Users\pc>kafka-topics.bat --bootstrap-server localhost:9092 --create --topic t_hello --partitions 1 --replication-factor 1
 WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
