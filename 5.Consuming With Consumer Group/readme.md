@@ -37,3 +37,7 @@ Consumer group 'cg-dashboard' has no active members.
 GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
 cg-dashboard    t_commodity     0          10              56              46              -               -               -
 ```
+
+Note - Even if we put a lag in consume, `Thread.sleep(ThreadLocalRandom.current().nextLong(500, 1000));` still both the consumer do not block each other and works fine
+
+![image](https://user-images.githubusercontent.com/54174687/142476808-5b030626-0da3-43a5-9842-bbee95dcee4d.png)
