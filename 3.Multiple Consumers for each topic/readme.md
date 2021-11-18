@@ -44,3 +44,15 @@ Now 3 consumers are working and 1 is idle, hence no. of partions = no. of consum
 
 ![image](https://user-images.githubusercontent.com/54174687/142466487-1ed3e8e4-b895-41b9-bea4-bc1d9fd4be68.png)
 
+# Alter the topic
+
+```
+>kafka-topics.bat --bootstrap-server localhost:9092 --alter --topic t_multi_partitions --partitions 4
+
+>kafka-topics.bat --bootstrap-server localhost:9092 --describe --topic t_multi_partitions
+Topic: t_multi_partitions       PartitionCount: 4       ReplicationFactor: 1    Configs: segment.bytes=1073741824
+        Topic: t_multi_partitions       Partition: 0    Leader: 0       Replicas: 0     Isr: 0
+        Topic: t_multi_partitions       Partition: 1    Leader: 0       Replicas: 0     Isr: 0
+        Topic: t_multi_partitions       Partition: 2    Leader: 0       Replicas: 0     Isr: 0
+        Topic: t_multi_partitions       Partition: 3    Leader: 0       Replicas: 0     Isr: 0
+```
