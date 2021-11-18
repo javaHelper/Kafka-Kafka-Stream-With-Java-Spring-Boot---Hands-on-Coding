@@ -13,3 +13,14 @@ when you add more partitions then Kafka automatically does the rebalancing and d
 `E:\>kafka-topics.bat --bootstrap-server localhost:9092 --alter --topic t_rebalance_new --partitions 2`
 
 With Spring Boot 2.5.7 versions, its not working, may be need to revisite later.
+
+
+# add topic
+kafka-topics.sh --bootstrap-server localhost:9092 --create --topic t_rebalance_new --partitions 1 --replication-factor 1
+
+kafka-topics.bat --bootstrap-server localhost:9092 --create --topic t_rebalance_new --partitions 1 --replication-factor 1
+
+# add partition to t_rebalance_new
+kafka-topics.sh --bootstrap-server localhost:9092 --alter --topic t_rebalance_new --partitions 2
+
+kafka-topics.bat --bootstrap-server localhost:9092 --alter --topic t_rebalance_new --partitions 2
