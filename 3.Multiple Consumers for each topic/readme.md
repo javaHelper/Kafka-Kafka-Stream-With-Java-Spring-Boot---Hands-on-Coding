@@ -56,3 +56,7 @@ Topic: t_multi_partitions       PartitionCount: 4       ReplicationFactor: 1    
         Topic: t_multi_partitions       Partition: 2    Leader: 0       Replicas: 0     Isr: 0
         Topic: t_multi_partitions       Partition: 3    Leader: 0       Replicas: 0     Isr: 0
 ```
+
+Now, you can see all four consumers are currently working.
+
+![image](https://user-images.githubusercontent.com/54174687/142467166-7948ba26-9dfa-487f-bacd-7655f7d8070c.png)
