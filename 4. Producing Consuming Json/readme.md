@@ -16,7 +16,8 @@
 `kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic t_employee`
 
 # Consume 
-```>kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic t_employee --offset earliest --partition 0
+```
+>kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic t_employee --offset earliest --partition 0
 {"name":"Employee 0","employee_id":"emp-0","birth_date":"2021-Nov-18"}
 {"name":"Employee 1","employee_id":"emp-1","birth_date":"2021-Nov-18"}
 {"name":"Employee 2","employee_id":"emp-2","birth_date":"2021-Nov-18"}
