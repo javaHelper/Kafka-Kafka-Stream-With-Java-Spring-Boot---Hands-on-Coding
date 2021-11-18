@@ -1,0 +1,19 @@
+# Multiple Consumers for each topic
+
+# In this case, one consumer processing data from 3 partitions.
+This shows only 1 consumer (ntainer#0-0-C-1) is running.
+
+```
+kafka-topics.bat --bootstrap-server localhost:9092 --create --topic t_multi_partitions --partitions 3 --replication-factor 1
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic t_multi_partitions.
+
+kafka-topics.bat --bootstrap-server localhost:9092 --describe --topic t_multi_partitions
+Topic: t_multi_partitions       PartitionCount: 3       ReplicationFactor: 1    Configs: segment.bytes=1073741824
+        Topic: t_multi_partitions       Partition: 0    Leader: 0       Replicas: 0     Isr: 0
+        Topic: t_multi_partitions       Partition: 1    Leader: 0       Replicas: 0     Isr: 0
+        Topic: t_multi_partitions       Partition: 2    Leader: 0       Replicas: 0     Isr: 0
+```
+
+
+![image](https://user-images.githubusercontent.com/54174687/142464009-77a48a34-52e4-46f5-8721-2ab7a9109709.png)
