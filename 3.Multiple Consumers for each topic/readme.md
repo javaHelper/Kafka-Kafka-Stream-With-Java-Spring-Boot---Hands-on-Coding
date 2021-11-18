@@ -17,3 +17,11 @@ Topic: t_multi_partitions       PartitionCount: 3       ReplicationFactor: 1    
 
 
 ![image](https://user-images.githubusercontent.com/54174687/142464009-77a48a34-52e4-46f5-8721-2ab7a9109709.png)
+
+# By Setting 
+
+`@KafkaListener(topics = "t_multi_partitions", concurrency = "2")` - concurrency = "2" that many consumers will be created.
+
+Now one partition is assigned to handle 2 partitions
+
+![image](https://user-images.githubusercontent.com/54174687/142465440-4239c156-1725-49aa-88c2-a2ec259b112f.png)
