@@ -25,3 +25,22 @@ Topic: t_multi_partitions       PartitionCount: 3       ReplicationFactor: 1    
 Now one partition is assigned to handle 2 partitions
 
 ![image](https://user-images.githubusercontent.com/54174687/142465440-4239c156-1725-49aa-88c2-a2ec259b112f.png)
+
+
+# By Setting 
+
+`@KafkaListener(topics = "t_multi_partitions", concurrency = "3")` - concurrency = "3" that many consumers will be created.
+
+Now 3 consumers are assigned to 3 paritions, 1 consumer is assigned to unique partition
+
+![image](https://user-images.githubusercontent.com/54174687/142466102-013b5bad-5df3-4020-822f-32099449fc8b.png)
+
+
+# By Setting 
+
+`@KafkaListener(topics = "t_multi_partitions", concurrency = "4")` - concurrency = "4" that many consumers will be created.
+
+Now 3 consumers are working and 1 is idle, hence no. of partions = no. of consumers
+
+![image](https://user-images.githubusercontent.com/54174687/142466487-1ed3e8e4-b895-41b9-bea4-bc1d9fd4be68.png)
+
