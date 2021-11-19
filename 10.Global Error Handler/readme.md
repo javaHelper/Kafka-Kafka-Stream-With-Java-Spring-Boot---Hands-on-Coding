@@ -67,7 +67,7 @@ public class FoodOrderErrorHandler implements ConsumerAwareListenerErrorHandler 
 
 KafkaConfig.java
 
-```
+```java
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.ConcurrentKafkaListenerContainerFactoryConfigurer;
