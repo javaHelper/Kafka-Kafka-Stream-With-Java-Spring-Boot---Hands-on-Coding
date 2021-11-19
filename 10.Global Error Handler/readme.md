@@ -106,6 +106,3 @@ public class KafkaConfig {
 	}
 }
 ```
-
-
-![image](https://user-images.githubusercontent.com/54174687/142580958-5ceb2bff-01e3-4d45-a4d8-906cf4a3d16b.png)
