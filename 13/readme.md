@@ -2,6 +2,16 @@
 
 
 ```sh
+C:\Users\pc>kafka-topics --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t.commodity.order
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic t.commodity.order.
+
+
+C:\Users\pc>kafka-topics --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t.commodity.promotion
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic t.commodity.promotion.
+
+
 C:\Users\pc>kafka-console-consumer --bootstrap-server localhost:9092 --topic t.commodity.order --from-beginning
 {"creditCardNumber":"9963840851042649","itemName":"Plastic Table","orderDateTime":"2021-11-20 23:55:54","orderLocation":"Jersey","orderNumber":"LTDZO7IK","price":548,"quantity":895}
 ```
