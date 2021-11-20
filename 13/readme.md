@@ -26,3 +26,17 @@ C:\Users\pc>kafka-console-consumer --bootstrap-server localhost:9092 --topic t.c
 
 ![image](https://user-images.githubusercontent.com/54174687/142737225-1414d025-a65d-401d-a2c6-824cb23bf93e.png)
 
+---------------------------
+
+# Promotion
+
+```
+C:\Users\pc>kafka-topics --bootstrap-server localhost:9092 --create --partitions 1 --replication-factor 1 --topic t.commodity.promotion
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic t.commodity.promotion.
+
+C:\Users\pc>kafka-console-consumer --bootstrap-server localhost:9092 --topic t.commodity.promotion --from-beginning
+{"promotionCode":"Keyboard181"}
+```
+
+![image](https://user-images.githubusercontent.com/54174687/142737671-4daa02da-b89b-4d51-9318-7acfcef1252c.png)
