@@ -8,3 +8,7 @@
 # Start Kakfa
 
 `.\bin\windows\kafka-server-start.bat .\config\server.properties`
+
+# Kill Port
+
+`taskkill /F /PID pid_number`
