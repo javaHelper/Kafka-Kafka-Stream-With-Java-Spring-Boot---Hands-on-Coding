@@ -44,6 +44,10 @@ E:\kafka_2.13-2.7.0>kafka-console-consumer.bat --bootstrap-server localhost:9092
 ![image](https://user-images.githubusercontent.com/54174687/143463213-57f7e5d2-6112-4e7a-bc74-c1fa66561956.png)
 
 
+![image](https://user-images.githubusercontent.com/54174687/143463322-faa0c0c8-f471-4088-8b3f-4299145aba9a.png)
+
+![image](https://user-images.githubusercontent.com/54174687/143463358-12efa0b4-ae8e-4027-97ee-5be1e3b60f26.png)
+
 
 
 
