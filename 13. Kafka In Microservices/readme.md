@@ -48,6 +48,9 @@ E:\kafka_2.13-2.7.0>kafka-console-consumer.bat --bootstrap-server localhost:9092
 
 ![image](https://user-images.githubusercontent.com/54174687/143463358-12efa0b4-ae8e-4027-97ee-5be1e3b60f26.png)
 
+You can see kafka-order logs, 
+
+![image](https://user-images.githubusercontent.com/54174687/143463974-f84cae82-6e3d-4a22-a7cf-d8f1316eeacf.png)
 
 
 
