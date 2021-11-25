@@ -16,3 +16,6 @@ E:\kafka_2.13-2.7.0>kafka-console-consumer.bat --bootstrap-server localhost:9092
 {"creditCardNumber":"5789557688969592","itemName":"Cotton Table","orderDateTime":"2021-11-25 19:58:19","orderLocation":"Belgium","orderNumber":"JFM1MWJM","price":286,"quantity":527}
 ```
 
+`Jdbc UrL = jdbc:h2:mem:kafkaorderdb`
+
+![image](https://user-images.githubusercontent.com/54174687/143459923-72735758-3ebb-4889-b73f-a48a3d681e6d.png)
