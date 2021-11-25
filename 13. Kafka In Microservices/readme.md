@@ -27,8 +27,25 @@ E:\kafka_2.13-2.7.0>kafka-console-consumer.bat --bootstrap-server localhost:9092
 
 ![image](https://user-images.githubusercontent.com/54174687/143460094-4d783d91-c7b1-4915-9dc4-594d76024ef6.png)
 
-- Start kafka-patterns
+- Start `kafka-patterns`
 
 ![image](https://user-images.githubusercontent.com/54174687/143461735-d203dbac-ceab-403c-9470-6dc6906f48e2.png)
+
+- Start `kafka-storage` and hit below two endpoints. Create Promotion and Create Discount.
+
+![image](https://user-images.githubusercontent.com/54174687/143462247-f5c988bd-813d-46a5-a35a-646d09acb7da.png)
+
+![image](https://user-images.githubusercontent.com/54174687/143462291-ed49a281-64a3-4a6b-a4ea-24799a318992.png)
+
+![image](https://user-images.githubusercontent.com/54174687/143462412-d8530220-c127-47da-bc06-2c13ad8a6715.png)
+
+- Start `kafka-rewards`, then hit the random order endpoint and see the logs of kafka-rewards
+
+![image](https://user-images.githubusercontent.com/54174687/143463213-57f7e5d2-6112-4e7a-bc74-c1fa66561956.png)
+
+
+
+
+
 
 
